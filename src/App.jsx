@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { useAppStore } from './store/useAppStore.js';
 import Landing from './pages/Landing.jsx';
@@ -23,6 +24,13 @@ function ProtectedRoute({ children, roles }) {
 
 export default function App() {
   const theme = useAppStore((state) => state.theme);
+
+  useEffect(() => {
+    document.documentElement.classList.remove('dark', 'light');
+    document.body.classList.remove('dark', 'light');
+    document.documentElement.classList.add(theme);
+    document.body.classList.add(theme);
+  }, [theme]);
 
   return (
     <div className={theme}>
