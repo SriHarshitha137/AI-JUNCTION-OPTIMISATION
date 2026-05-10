@@ -9,6 +9,7 @@ The AI Junction Optimization System is a smart-city platform that reimagines how
 At the core of the system is the Traffic Pressure Index (TPI) — a custom AI scoring model that combines vehicle count, waiting time, predicted traffic, and emergency priority to decide which lane should receive the green signal first.
 
 🚑 Built for Real-World Impact
+
 Creates Emergency Corridors for ambulances and fire trucks.
 Recommends the fastest, least-congested route using live location.
 Displays city-wide traffic heatmaps and predictive analytics.
